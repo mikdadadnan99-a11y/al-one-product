@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="كتاب المنتج الواحد - تعلم كيف تبني منتج رقمي واحد وتحقق دخل حقيقي بدون جمهور">
+    <meta name="keywords" content="منتج رقمي، كسب المال، ريادة الأعمال، نظام البيع، كتاب إلكتروني">
+    <meta name="author" content="Mikdad">
+    <meta property="og:title" content="المنتج الواحد - بناء منتج رقمي وتحقيق دخل حقيقي">
+    <meta property="og:description" content="كتاب يعلمك كيف تبني منتج رقمي واحد فقط وتبدأ البيع بطريقة بسيطة">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=المنتج+الواحد">
+    <meta property="og:url" content="https://mikdadadnan99-a11y.github.io/al-one-product">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#000000">
+    <title>المنتج الواحد - كتاب إلكتروني | ابنِ منتجك الأول</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #ffffff;
+            direction: rtl;
+            text-align: right;
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            background-color: #000000;
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .mobile-menu-icon {
+            display: none;
+            font-size: 1.5rem;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            color: #ffffff;
+            padding: 6rem 2rem;
+            text-align: center;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(148, 112, 190, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+            letter-spacing: -1px;
+        }
+
+        .hero-highlight {
+            color: #d4af37;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: #e0e0e0;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: #d4af37;
+            color: #000000;
+        }
+
+        .btn-primary:hover {
+            background-color: #f0c857;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #d4af37;
+        }
+
+        .btn-secondary:hover {
+            background-color: #d4af37;
+            color: #000000;
+            transform: translateY(-3px);
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: #000000;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #666666;
+            text-align: center;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* AUTHOR SECTION */
+        .author-section {
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .author-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .author-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 0.5rem;
+        }
+
+        .author-title {
+            color: #d4af37;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .author-bio {
+            color: #555555;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* ABOUT BOOK SECTION */
+        .about-section {
+            background-color: #ffffff;
+        }
+
+        .book-description {
+            background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
+            padding: 3rem;
+            border-radius: 12px;
+            border-right: 5px solid #d4af37;
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #333333;
+            text-align: center;
+        }
+
+        /* PROBLEMS & SOLUTIONS SECTION */
+        .problems-solutions {
+            background-color: #f5f5f5;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .column {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .column h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #000000;
+        }
+
+        .problem-item,
+        .solution-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.2rem;
+            gap: 1rem;
+        }
+
+        .problem-icon,
+        .solution-icon {
+            font-size: 1.5rem;
+            min-width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+        }
+
+        .problem-icon {
+            color: #d4af37;
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+
+        .solution-icon {
+            color: #9470be;
+            background-color: rgba(148, 112, 190, 0.1);
+        }
+
+        .problem-text,
+        .solution-text {
+            color: #555555;
+            font-size: 1.05rem;
+        }
+
+        /* WHAT YOU LEARN */
+        .learn-section {
+            background-color: #ffffff;
+        }
+
+        .learn-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .learn-item {
+            background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            border-top: 4px solid #d4af37;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .learn-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .learn-item-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+
+        .learn-item-text {
+            color: #333333;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* TRANSFORMATION SECTION */
+        .transformation-section {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .transformation-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .transformation-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid #d4af37;
+            min-width: 250px;
+            backdrop-filter: blur(10px);
+        }
+
+        .transformation-label {
+            color: #d4af37;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .transformation-text {
+            font-size: 1.3rem;
+            font-weight: 700;
+            line-height: 1.6;
+        }
+
+        .arrow {
+            font-size: 2rem;
+            color: #d4af37;
+        }
+
+        /* SOCIAL PROOF */
+        .social-proof-section {
+            background-color: #f5f5f5;
+        }
+
+        .placeholder-note {
+            background-color: #ffffff;
+            border-right: 5px solid #9470be;
+            padding: 2rem;
+            border-radius: 8px;
+            color: #666666;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.05rem;
+        }
+
+        /* PAYMENT SECTION */
+        .payment-section {
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .payment-method {
+            background-color: #f5f5f5;
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            border-bottom: 3px solid #d4af37;
+            min-width: 150px;
+            font-weight: 600;
+            color: #333333;
+        }
+
+        /* FINAL CTA SECTION */
+        .final-cta-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .final-cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .final-cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+        }
+
+        .final-cta-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: #e0e0e0;
+            line-height: 1.8;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #000000;
+            color: #999999;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.95rem;
+            border-top: 1px solid #d4af37;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .learn-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .transformation-container {
+                gap: 1.5rem;
+            }
+
+            .transformation-box {
+                min-width: 100%;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            nav {
+                gap: 1rem;
+            }
+
+            nav a {
+                font-size: 0.85rem;
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+
+            .payment-methods {
+                gap: 1rem;
+                flex-direction: column;
+            }
+
+            .payment-method {
+                width: 100%;
+            }
+
+            .final-cta-content h2 {
+                font-size: 1.8rem;
+            }
+
+            .final-cta-content p {
+                font-size: 1.1rem;
+            }
+
+            .author-name {
+                font-size: 1.5rem;
+            }
+
+            .section {
+                padding: 3rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 4rem 1rem;
+                min-height: 100vh;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            .btn {
+                padding: 0.9rem 1.8rem;
+                font-size: 0.95rem;
+            }
+
+            .column {
+                padding: 1.5rem;
+            }
+
+            .column h3 {
+                font-size: 1.4rem;
+            }
+
+            .learn-item {
+                padding: 1.5rem;
+            }
+
+            .book-description {
+                padding: 1.5rem;
+                font-size: 1.05rem;
+            }
+
+            .author-bio {
+                font-size: 1rem;
+            }
+
+            .final-cta-section {
+                padding: 2rem 1rem;
+            }
+
+            .final-cta-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .final-cta-content p {
+                font-size: 1rem;
+            }
+
+            header {
+                padding: 0.8rem;
+            }
+
+            .logo {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-container">
+        <div class="logo">المنتج الواحد</div>
+        <nav>
+            <a href="#about">عن الكتاب</a>
+            <a href="#learn">ماذا ستتعلم</a>
+            <a href="#cta">اطلب الآن</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>ابنِ <span class="hero-highlight">أول منتج رقمي</span> يحقق لك دخل حقيقي… <br>بدون جمهور وبدون تعقيد</h1>
+        <p>كتاب "المنتج الواحد" يعلّمك كيف تبني منتج رقمي واحد وتبدأ البيع بطريقة بسيطة وواضحة.</p>
+        <div class="cta-buttons">
+            <a href="https://wa.me/966???text=مرحباً%2C%20أريد%20شراء%20كتاب%20المنتج%20الواحد" target="_blank" class="btn btn-primary">اطلب الكتاب عبر واتساب</a>
+        </div>
+    </div>
+</section>
+
+<!-- AUTHOR SECTION -->
+<section class="section author-section">
+    <div class="author-container">
+        <div class="author-name">Mikdad</div>
+        <div class="author-title">System Builder & Digital Creator</div>
+        <p class="author-bio">أبني أنظمة تحول المعرفة إلى منتجات رقمية قابلة للبيع.</p>
+    </div>
+</section>
+
+<!-- ABOUT BOOK SECTION -->
+<section class="section about-section" id="about">
+    <h2 class="section-title">ما هو كتاب "المنتج الواحد"؟</h2>
+    <div class="book-description">
+        كتاب "المنتج الواحد" هو نظام يساعدك على بناء منتج رقمي واحد فقط بدل التشتت بين أفكار كثيرة. تصميم بسيط، استراتيجية واضحة، وخطوات عملية جاهزة للتنفيذ.
+    </div>
+</section>
+
+<!-- PROBLEMS & SOLUTIONS SECTION -->
+<section class="section problems-solutions">
+    <div class="two-column">
+        <!-- PROBLEMS -->
+        <div class="column">
+            <h3>المشاكل التي تواجهك</h3>
+            <div class="problem-item">
+                <div class="problem-icon">❌</div>
+                <div class="problem-text">التشتت بين الأفكار</div>
+            </div>
+            <div class="problem-item">
+                <div class="problem-icon">❌</div>
+                <div class="problem-text">عدم وجود نظام واضح</div>
+            </div>
+            <div class="problem-item">
+                <div class="problem-icon">❌</div>
+                <div class="problem-text">البدء بدون خطة</div>
+            </div>
+            <div class="problem-item">
+                <div class="problem-icon">❌</div>
+                <div class="problem-text">انتظار الجمهور قبل البيع</div>
+            </div>
+        </div>
+
+        <!-- SOLUTIONS -->
+        <div class="column">
+            <h3>الحل</h3>
+            <div class="solution-item">
+                <div class="solution-icon">✓</div>
+                <div class="solution-text">بناء منتج رقمي واحد فقط</div>
+            </div>
+            <div class="solution-item">
+                <div class="solution-icon">✓</div>
+                <div class="solution-text">نظام بيع بسيط وفعال</div>
+            </div>
+            <div class="solution-item">
+                <div class="solution-icon">✓</div>
+                <div class="solution-text">تنفيذ مباشر بدون تأجيل</div>
+            </div>
+            <div class="solution-item">
+                <div class="solution-icon">✓</div>
+                <div class="solution-text">البيع يبدأ من الآن</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHAT YOU LEARN SECTION -->
+<section class="section learn-section" id="learn">
+    <h2 class="section-title">ماذا ستتعلم؟</h2>
+    <p class="section-subtitle">محتوى الكتاب مصمم ليعطيك كل ما تحتاجه لبدء مشروعك الأول</p>
+    <div class="learn-grid">
+        <div class="learn-item">
+            <div class="learn-item-number">1</div>
+            <div class="learn-item-text">اختيار فكرة منتج صحيحة</div>
+        </div>
+        <div class="learn-item">
+            <div class="learn-item-number">2</div>
+            <div class="learn-item-text">بناء منتج رقمي واحد</div>
+        </div>
+        <div class="learn-item">
+            <div class="learn-item-number">3</div>
+            <div class="learn-item-text">البيع بدون جمهور كبير</div>
+        </div>
+        <div class="learn-item">
+            <div class="learn-item-number">4</div>
+            <div class="learn-item-text">تحويل المعرفة إلى دخل</div>
+        </div>
+        <div class="learn-item">
+            <div class="learn-item-number">5</div>
+            <div class="learn-item-text">إطلاق أول عملية بيع</div>
+        </div>
+    </div>
+</section>
+
+<!-- TRANSFORMATION SECTION -->
+<section class="section transformation-section">
+    <h2 class="section-title">التحول الذي ستحققه</h2>
+    <div class="transformation-container">
+        <div class="transformation-box">
+            <div class="transformation-label">من</div>
+            <div class="transformation-text">شخص لديه أفكار كثيرة</div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="transformation-box">
+            <div class="transformation-label">إلى</div>
+            <div class="transformation-text">شخص يملك منتج واحد جاهز للبيع</div>
+        </div>
+    </div>
+</section>
+
+<!-- PAYMENT SECTION -->
+<section class="section payment-section">
+    <h2 class="section-title">طرق الدفع</h2>
+    <p class="section-subtitle">ندعم أسهل طرق الدفع لك</p>
+    <div class="payment-methods">
+        <div class="payment-method">💳 Zain Cash</div>
+        <div class="payment-method">💳 Click</div>
+    </div>
+</section>
+
+<!-- SOCIAL PROOF SECTION -->
+<section class="section social-proof-section">
+    <h2 class="section-title">تجارب العملاء</h2>
+    <div class="placeholder-note">
+        سيتم إضافة تجارب العملاء وآرائهم قريباً. عد إلينا لاحقاً لرؤية ما يقول عنا المشترون.
+    </div>
+</section>
+
+<!-- FINAL CTA SECTION -->
+<section class="section final-cta-section" id="cta">
+    <div class="final-cta-content">
+        <h2>منتج واحد قد يكون بداية مشروعك بالكامل</h2>
+        <p>لا تنتظر الوقت المثالي. ابدأ الآن وتعلم كيفية بناء منتج رقمي واحد يحقق لك دخل حقيقي.</p>
+        <a href="https://wa.me/966???text=مرحباً%2C%20أريد%20شراء%20كتاب%20المنتج%20الواحد" target="_blank" class="btn btn-primary">اطلب الكتاب عبر واتساب</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 المنتج الواحد - جميع الحقوق محفوظة</p>
+    <p>صنع بـ ❤️ من قبل Mikdad</p>
+    <p><a href="#">سياسة الخصوصية</a> | <a href="#">شروط الاستخدام</a></p>
+</footer>
+
+</body>
+</html>
